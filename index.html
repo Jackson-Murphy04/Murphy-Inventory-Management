@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Inventory Mangement</title>
+		<meta chrset="utf-8">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<div id="banner">
+			<h1 class="title">
+				Inventory Management 
+			</h1>
+		</div>
+		<div id="control" class="main">
+			<div id = "foologo-wrapper" height="80px" width="80px" style="display: inline">
+				
+			</div>
+			<div class="switch" style="display: inline">
+				<label>
+					Dark Mode <input type="checkbox" id="switch"> 
+				</label>
+			</div>
+		</div>
+		<div id="banner4">
+			<h1 class="title">
+				Add New Items
+			</h1>
+		</div>
+		<div id="add" class="main">
+			<form id="add-stock" onsubmit="return submitHandler()">
+            	<input id="add-new" class = "input" type="text" placeholder="Add..." />
+          	</form>
+          	<br/>
+          	<span class="button1" id="button1">Add</span>
+		</div>
+		<div id="banner2">
+			<h1 class="title">
+				Inventory
+			</h1>
+		</div>
+		<div id="inventory" class="main">
+			<form id="search">
+            	<input class="input" type="text" placeholder="Search inventory..." />
+          	</form>
+          	<ul id='inventoryList'>
+          		<!--
+	    		<li>
+	    			<span class="name">Bananas</span>
+	    			<span class="button">Edit</span>
+	    			<br>
+	    			<span class="location">Location: Pantry</span>
+	    			<br>
+	    			<span class ="number">On Hand: 44</span>
+	    		</li>
+	    		<li>
+	   				<span class="name">Coke</span>
+	   				<span class="button">Edit</span>
+	   				<br>
+	   				<span class="location">Location: Mini Fridge</span>
+    				<br>	    				
+    				<span class ="number">On Hand: 23</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Muffins</span>
+	   				<span class="button">Edit</span>
+	   				<br>
+	   				<span class="location">Location: Counter</span>
+	   				<br>
+    				<span class ="number">On Hand: 7</span>
+  	    		</li>
+	    		<li>
+	    			<span class="name">Pudding</span>
+	    			<span class="button">Edit</span>
+	   				<br>
+	   				<span class="location">Location: Fridge</span>
+	   				<br>
+	   				<span class ="number">On Hand: 172</span>
+    			</li>	    			
+    			<li>
+	    			<span class="name">Pretzel</span>
+	    			<span class="button">Edit</span>
+	    			<br>
+	    			<span class="location">Location: Pantry</span>
+	   				<br>
+	   				<span class ="number">On Hand: 9</span>
+	   			</li>
+	   			-->
+	   		</ul>
+	   		
+		</div>			
+		<div id="banner3">
+			<h1 class="title">
+				Out of Stock
+			</h1>
+		</div>
+		<div id="out" class="main">
+			<ul id="outSection">
+				<!--
+	    		<li>
+	    			<span class="name">Cream Cheese</span>
+	    			<span class="button">Add</span>
+	    			<br>
+	   				<br>
+	   			</li>
+	   			<li>
+	   				<span class="name">Crackers</span>
+	   				<span class="button">Add</span>
+	   				<br>
+	   				<br>
+	   			</li>
+	   			<li>
+	   				<span class="name">Grape Juice</span>
+	   				<span class="button">Add</span>
+	   				<br>
+	   				<br>
+	   			</li>
+	   			-->
+	   		</ul>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
+
